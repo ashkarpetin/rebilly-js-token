@@ -1,0 +1,760 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Official Rebilly JS Token Documentation">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Getting Started - Rebilly JS Token Library</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../styles/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#getting-started" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Rebilly JS Token Library" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Rebilly JS Token Library
+              </span>
+              <span class="md-header-nav__topic">
+                Getting Started
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Rebilly/rebilly-js-token/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Rebilly JS Token
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Rebilly JS Token Library" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Rebilly JS Token Library
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Rebilly/rebilly-js-token/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Rebilly JS Token
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Getting Started
+      </label>
+    
+    <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
+      Getting Started
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#including-rebillyjs" title="Including Rebilly.js" class="md-nav__link">
+    Including Rebilly.js
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" title="Authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-token" title="Creating a token" class="md-nav__link">
+    Creating a token
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-the-payment-instrument-data" title="Building the payment instrument data" class="md-nav__link">
+    Building the payment instrument data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-requirements" title="Minimal Requirements" class="md-nav__link">
+    Minimal Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-the-callback" title="Defining the callback" class="md-nav__link">
+    Defining the callback
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-endpoint" title="Changing the endpoint" class="md-nav__link">
+    Changing the endpoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-form" title="Example Form" class="md-nav__link">
+    Example Form
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../token-fields/" title="Defining a Token" class="md-nav__link">
+      Defining a Token
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../methods/" title="Methods" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../generating-api-key/" title="Generating a publishable API key" class="md-nav__link">
+      Generating a publishable API key
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../validation-tools/" title="Validation Tools" class="md-nav__link">
+      Validation Tools
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../common-errors/" title="Common Errors" class="md-nav__link">
+      Common Errors
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#including-rebillyjs" title="Including Rebilly.js" class="md-nav__link">
+    Including Rebilly.js
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" title="Authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-token" title="Creating a token" class="md-nav__link">
+    Creating a token
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-the-payment-instrument-data" title="Building the payment instrument data" class="md-nav__link">
+    Building the payment instrument data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-requirements" title="Minimal Requirements" class="md-nav__link">
+    Minimal Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-the-callback" title="Defining the callback" class="md-nav__link">
+    Defining the callback
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-endpoint" title="Changing the endpoint" class="md-nav__link">
+    Changing the endpoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-form" title="Example Form" class="md-nav__link">
+    Example Form
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Rebilly/rebilly-js-token/edit/master/docs/getting-started.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
+<p>The library must be inserted in the page you will use to handle payment instrument data for either payment cards or bank accounts. </p>
+<div class="admonition note">
+<p class="admonition-title">Server-side SDK</p>
+<p>You must use one of the official Rebilly server-side SDKs to generate a public signature from your secret API key. See <a href="https://rebilly.github.io/RebillyAPI/#section/Authentication">Authentication</a> for more details.</p>
+</div>
+<h2 id="including-rebillyjs">Including Rebilly.js<a class="headerlink" href="#including-rebillyjs" title="Permanent link">&para;</a></h2>
+<p>Add Rebilly.js to your page using the following CDN provider, preferably at the bottom before the <code class="codehilite">&lt;/body&gt;</code>.</p>
+<blockquote>
+<p>Always use <code class="codehilite">HTTPS</code> when including the library.</p>
+</blockquote>
+<p><em>Rebilly CDN</em></p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.rebilly.com/rebilly-js-token@1.5.0/rebilly.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+<p>The library is then available in the global scope as <code class="codehilite"><span class="nx">Rebilly</span></code>.</p>
+<h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h2>
+<p>Once included in your checkout page, authenticate your token requests using a publishable API key <a href="https://app.rebilly.com/api-keys/add" target="_blank">generated in Rebilly</a>.</p>
+<div class="codehilite"><pre><span></span><span class="nx">Rebilly</span><span class="p">.</span><span class="nx">setPublishableKey</span><span class="p">(</span><span class="s1">&#39;pk_live_...&#39;</span><span class="p">);</span>
+</pre></div>
+
+<blockquote>
+<p>See <a href="../generating-api-key/">Generating a publishable API key</a> for more details.</p>
+</blockquote>
+<h2 id="creating-a-token">Creating a token<a class="headerlink" href="#creating-a-token" title="Permanent link">&para;</a></h2>
+<p>To create a token you must provide two parameters: the form or object literal with the payment instrument data (payment card or bank account) and a callback function that will receive the resulting token from the Rebilly API.</p>
+<p>Optionally you can also include an object literal defining <code class="codehilite">extraData</code> to combine to the main payload. This is useful when using a form to include information about the lead source.</p>
+<div class="admonition tip">
+<p class="admonition-title">Form Submission</p>
+<p>When creating a token, prevent the default submission of the form until a value is returned by the API and injected into your page.</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="c1">// arguments: payload, callback, extraData</span>
+<span class="nx">Rebilly</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="nx">Node</span><span class="o">|</span><span class="nb">Object</span><span class="p">,</span> <span class="nb">Function</span><span class="p">[,</span> <span class="nb">Object</span><span class="p">])</span>
+</pre></div>
+
+<h3 id="building-the-payment-instrument-data">Building the payment instrument data<a class="headerlink" href="#building-the-payment-instrument-data" title="Permanent link">&para;</a></h3>
+<p>The first parameter will be the payment instrument data. You can use either a form node in your page or a plain object literal.</p>
+<p><strong>Parse a form for the payment instrument</strong></p>
+<p>The library can look for field with the <code class="codehilite">data-rebilly</code> attribute and compile the data from your form directly. Specify the field name associated in Rebilly as <code class="codehilite">data-rebilly=&quot;fieldName&quot;</code>.</p>
+<p>You can omit providing a <code class="codehilite">method</code> field, the library will detect it based on which fields you specified.</p>
+<div class="admonition warning">
+<p class="admonition-title">PCI Compliance</p>
+<p>Never define <code class="codehilite">name</code> attributes for the payment card fields in your form. This will prevent field data from showing up in your server logs.</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">data-rebilly</span><span class="o">=</span><span class="s">&quot;pan&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">data-rebilly</span><span class="o">=</span><span class="s">&quot;expYear&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">data-rebilly</span><span class="o">=</span><span class="s">&quot;expMonth&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">data-rebilly</span><span class="o">=</span><span class="s">&quot;cvv&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+
+<p>Using the form above the library will detect a payment card.</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;form&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">Rebilly</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="nx">form</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span>
+</pre></div>
+
+<p><strong>Use an object literal</strong></p>
+<p>Alternatively use an object literal built following the API specification for defining a payment instrument. The accepted <code class="codehilite">method</code> values are <code class="codehilite">payment-card</code> and <code class="codehilite">ach</code> (bank account).
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">payload</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;payment-card&#39;</span><span class="p">,</span>
+    <span class="nx">paymentInstrument</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">pan</span><span class="o">:</span> <span class="s1">&#39;4111111111111111&#39;</span><span class="p">,</span>
+        <span class="nx">expYear</span><span class="o">:</span> <span class="s1">&#39;2022&#39;</span><span class="p">,</span>
+        <span class="nx">expMonth</span><span class="o">:</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span>
+        <span class="nx">cvv</span><span class="o">:</span> <span class="s1">&#39;123&#39;</span>
+    <span class="p">},</span>
+    <span class="c1">// the first/last name is required</span>
+    <span class="nx">billingAddress</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">firstName</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span>
+        <span class="nx">lastName</span><span class="o">:</span> <span class="s1">&#39;Doe&#39;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="nx">Rebilly</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="nx">payload</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span>
+</pre></div></p>
+<h3 id="minimal-requirements">Minimal Requirements<a class="headerlink" href="#minimal-requirements" title="Permanent link">&para;</a></h3>
+<p>To create a payment token you must supply Rebilly with a minimal amount of fields. This applies to both methods of building the payment instrument data.</p>
+<p><strong>Billing Address</strong></p>
+<p>The billing address requires <code class="codehilite">firstName</code> and <code class="codehilite">lastName</code>.</p>
+<p><strong>Payment Instrument</strong></p>
+<p>The payment instrument requires different fields based on the <code class="codehilite">method</code> defined. </p>
+<ul>
+<li>For method <code class="codehilite">payment-card</code>: <code class="codehilite">pan</code>, <code class="codehilite">expYear</code>, <code class="codehilite">expMonth</code> and <code class="codehilite">cvv</code></li>
+<li>For method <code class="codehilite">ach</code>: <code class="codehilite">routingNumber</code>, <code class="codehilite">accountNumber</code>, <code class="codehilite">accountType</code> and <code class="codehilite">bankName</code></li>
+</ul>
+<blockquote>
+<p>See <a href="../token-fields/">Token Fields</a> for more details.</p>
+</blockquote>
+<h3 id="defining-the-callback">Defining the callback<a class="headerlink" href="#defining-the-callback" title="Permanent link">&para;</a></h3>
+<p>The callback function should be used to inject the token returned by the API into your form. Once submitted, use the value in conjunction with one of the server-side SDKs to create the customer.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// the token is returned as response.data.id</span>
+<span class="kd">var</span> <span class="nx">callback</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// create a hidden input field</span>
+    <span class="kd">var</span> <span class="nx">tokenField</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">);</span>
+    <span class="nx">tokenField</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;hidden&#39;</span><span class="p">);</span>
+    <span class="nx">tokenField</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;payment-token&#39;</span><span class="p">);</span>
+    <span class="nx">tokenField</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+    <span class="c1">// append to the form and submit to the server</span>
+    <span class="nx">form</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tokenField</span><span class="p">);</span>
+    <span class="nx">form</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="nx">Rebilly</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="nx">form</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span>
+</pre></div>
+
+<p><strong>Callback Argument</strong></p>
+<p>The argument received by the callback contains additional information on the API request and can be used to detect validation errors.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>error</td>
+<td>boolean</td>
+<td>Defines whether there was an error with the request or not.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>string</td>
+<td>The response message. Returns <code class="codehilite">success</code> if there was no errors, or the error message.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>number</td>
+<td>The status code returned by the response.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Object</td>
+<td>The response data as returned by the API. The token is exposed as <code class="codehilite">data.id</code>.</td>
+</tr>
+<tr>
+<td>xhr</td>
+<td>Object</td>
+<td>The raw XHR request object.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="changing-the-endpoint">Changing the endpoint<a class="headerlink" href="#changing-the-endpoint" title="Permanent link">&para;</a></h2>
+<p>You can change the default production endpoint URL for testing purposes via <code class="codehilite"><span class="nx">Rebilly</span><span class="p">.</span><span class="nx">setEndpoint</span></code>. This must be done before the token is created to apply.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// using the sandbox endpoint</span>
+<span class="nx">Rebilly</span><span class="p">.</span><span class="nx">setEndpoint</span><span class="p">(</span><span class="s1">&#39;https://api-sandbox.rebilly.com/v2.1/tokens&#39;</span><span class="p">);</span>
+</pre></div>
+
+<h2 id="example-form">Example Form<a class="headerlink" href="#example-form" title="Permanent link">&para;</a></h2>
+<p>When combined together the most basic version of the page would look like the following example:
+<script src="https://gist.github.com/Teknologica/6d814f041428e5255df07cd2c60d1334.js"></script></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../token-fields/" title="Defining a Token" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Defining a Token
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 Rebilly Inc.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
